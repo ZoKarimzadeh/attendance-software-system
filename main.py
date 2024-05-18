@@ -1,9 +1,10 @@
 from attendanceSystem import AttendanceSystem
 from repository import Repository
 
+
 class Main:
     """Employee Attendance Management Application."""
-    
+
     def __init__(self):
         """Start the Employee Attendance system with a repository."""
         self.repository = Repository("employees.db")
@@ -49,13 +50,13 @@ class Main:
             print(record)
 
     def run(self):
-        """Execute the main application loop to handle user input and actions."""
+        """Execute the main application loop to handle user inputs."""
         actions = {
-            '1': self.add_employee,
-            '2': self.view_all_employees,
-            '3': self.record_attendance,
-            '4': self.view_employee_attendance,
-            '5': exit
+            "1": self.add_employee,
+            "2": self.view_all_employees,
+            "3": self.record_attendance,
+            "4": self.view_employee_attendance,
+            "5": exit,
         }
 
         while True:
@@ -66,6 +67,7 @@ class Main:
                 action()
             else:
                 print("Invalid choice. Please enter a number between 1 and 5.")
+
 
 if __name__ == "__main__":
     main = Main()
