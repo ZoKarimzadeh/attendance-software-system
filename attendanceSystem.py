@@ -28,8 +28,9 @@ class AttendanceSystem:
         status = input("Enter status (A- Arrival, D- Departure): ")
         self.record_attendance(emp_id, status)
 
-    def get_employee_attendance(self):
-        emp_id = input("Enter employee id: ")
+    def get_employee_attendance(self, emp_id=None):
+        if emp_id is None:
+            emp_id = input("Enter employee id: ")
         return self.repository.get_employee_attendance(emp_id)
 
     def get_all_employees(self):
