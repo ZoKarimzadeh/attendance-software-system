@@ -9,17 +9,11 @@ class AttendanceSystemInterpreter:
         self.attendance_system = AttendanceSystem(self.repository)
 
     def interpret_dsl_file(self, file_path):
-        try:
-            with open(file_path, "r") as file:
-                for line in file:
-                    line = line.strip()
-                    if line:
-                        self.execute_action(line)
-        except FileNotFoundError:
-            print("DSL file not found. Creating a new file.")
-            # Create an empty file if it doesn't exist
-            with open(file_path, "w+") as file:
-                pass
+        with open(file_path, "r") as file:
+            for line in file:
+                line = line.strip()
+                if line:
+                    self.execute_action(line)
 
     def execute_action(self, action_line):
         if ":" in action_line:
