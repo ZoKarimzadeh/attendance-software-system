@@ -66,7 +66,7 @@ Meaningful method names and docstrings were utilized to provide clear explanatio
 
 ## 6 and 7: Build Management and CI/CD
 
-GitHub Actions was used for build management and CI/CD pipeline. The workflow includes:
+GitHub Actions was used for build management and CI/CD pipeline [Workflow yml file](https://github.com/ZoKarimzadeh/attendance-software-system/blob/main/.github/workflows/python-app.yml). The workflow includes:
 - Build step: Installing requirements, checking code with lint, and running tests.
 - Deploy step: Deploying the application after successful build and test completion. [Sample workflow](https://github.com/ZoKarimzadeh/attendance-software-system/actions/runs/9139057392).
 
@@ -82,8 +82,6 @@ IntelliJ IDEA was chosen as the IDE for its robust features and productivity enh
 - **Ctrl + Alt + B**: Go to implementation(s)
 - **Ctrl + Shift + R**: Replace in path
 - **Ctrl + Shift + F7**: Highlight usages in file
-
-These shortcuts can significantly improve your productivity and streamline your development workflow in IntelliJ IDEA.
 
 ## 10. Domain Specific Language (DSL)
 In this phase dedicated to Domain Specific Language (DSL), our project comprises two essential files: the Interpreter and the DSL file. The Interpreter, meticulously crafted, serves to interpret and execute commands defined within the DSL file.
