@@ -2,6 +2,7 @@ from employee import Employee
 from attendance import Attendance
 from datetime import datetime
 
+
 class AttendanceSystem:
     def __init__(self, repository):
         self.repository = repository
